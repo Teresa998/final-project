@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cover-container {
+  position: relative;
+  width: 489px;
+  height: 682px;
+  overflow: hidden;
+}
+
+.cover-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.text-area {
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  color: #333;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.next-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 20px;
+  background-color: #f8d04d1d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.next-btn:hover {
+  background-color: #b1970067;
+}
+
+.annotated {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px solid red;
+  background-color: rgba(255, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+/* 箭頭與註解 */
+.annotated .annotation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 5px;
+  width: 220px;
+  background-color: #fffbe8;
+  border-left: 3px solid red;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #333;
+  z-index: 10;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.annotation .arrow {
+  font-weight: bold;
+  color: red;
+  margin-right: 5px;
+}
+
+.cover-container {
+  position: relative;
+  width: 489px;
+  height: 682px;
+}
+
+.cover-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.file-btn {
+  position: absolute;
+  left: 150px;
+  width: 180px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.file-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 最底部 CLICK TO VIEW DETAILS 的按鈕 */
+.details-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 140px;
+  width: 220px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 固定尺寸封面容器 */
+.cover-container.fixed-size {
+  position: relative;
+  width: 489px;
+  height: 682px;
+}
+
+/* 背景圖 */
+.cover-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* 隱形按鈕（透明） */
+.file-btn {
+  position: absolute;
+  width: 180px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.file-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* 圖片與內容容器 */
+.cover-container {
+  position: relative;
+  width: 489px;
+  height: 682px;
+  overflow: hidden;
+}
+
+/* 背景圖片 */
+.cover-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* 文字區塊（標題與正文） */
+.text-area {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 100px; /* 保留底部空間給按鈕 */
+  overflow: hidden; /* 超出不顯示 */
+}
+
+
+/* 標題樣式 */
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 正文樣式 */
+.content {
+  font-size: 1em;
+  line-height: 1.5;
+  /* 刪除 max-height 和 overflow */
+    padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* Next 按鈕 */
+.next-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 20px;
+  background-color: #f8d04d1d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.next-btn:hover {
+  background-color: #b1970067;
+}
+.prev-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  padding: 10px 20px;
+  background-color: #f8d04d1d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.prev-btn:hover {
+  background-color: #b1970067;
+}
